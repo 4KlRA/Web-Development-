@@ -16,20 +16,30 @@ I'm currently following **The Odin Project** and working through its Foundations
 ```text
 WebDevelopment/
 │
-├── Foundations/
-│   ├── links-and-images/
-│   ├── Lists/
-│   ├── Projects/
-│   │   └── Recipes/
-│   └── Working with Text/
+├── TheOdinProject/
+│   ├── Foundations/
+│   │   ├── Working with Text/
+│   │   ├── Lists/
+│   │   ├── links-and-images/
+│   │   ├── cascade/
+│   │   ├── intro-to-css/
+│   │   ├── block-and-inline/
+│   │   └── Projects/
+│   │       └── Recipes/
+│   │           ├── recipes/
+│   │           ├── index.html
+│   │           ├── style.css
+│   │           └── README.md
+│   │
+│   └── FullStackJavaScript/
 │
-└── FullStackJavaScript/
+└── README.md
 ```
 
 ## 🛠️ Technologies
 
 - HTML5
-- CSS3 (as I progress)
+- CSS3
 - JavaScript (as I progress)
 - Git and GitHub
 
@@ -39,12 +49,17 @@ WebDevelopment/
 
 Currently learning and practising:
 
-- [x] HTML foundations
-- [x] Working with text
-- [x] Lists
-- [x] Links and images
+- [x] HTML document structure, headings, paragraphs, and text formatting
+- [x] Ordered and unordered lists
+- [x] Links, images, and relative file paths
+- [x] CSS methods: external, internal, and inline stylesheets
+- [x] Element, class, and ID selectors
+- [x] Grouping, chaining, and descendant combinator selectors
+- [x] CSS cascade and specificity exercises
+- [x] Block and inline layout exercises
+- [x] Margin, padding, borders, and basic box-model practice
 - [x] First HTML project – Recipes Website
-- [ ] CSS foundations
+- [ ] Continue CSS practice and complete the Recipes styling exercise
 - [ ] JavaScript fundamentals
 - [ ] Further Foundations projects
 
@@ -54,10 +69,10 @@ Not started yet.
 
 ## 🚀 Goals
 
-- Build a strong foundation in web development.
-- Understand HTML, CSS, and JavaScript.
-- Develop problem-solving skills.
-- Build projects while learning.
+- Build a strong foundation in HTML, CSS, and JavaScript.
+- Understand how webpages are structured and styled.
+- Strengthen problem-solving skills through practical exercises.
+- Build projects alongside the curriculum.
 - Become comfortable with Git and GitHub.
 - Progress towards becoming a full-stack developer.
 
