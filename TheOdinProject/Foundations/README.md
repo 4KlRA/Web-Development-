@@ -8,48 +8,46 @@ The purpose of this section is to develop a strong understanding of the fundamen
 
 ### 1. Working with Text
 
-Folder: `Working with Text/`
+**Directory:** `Working with Text/`
 
 Practised:
 
-- Structuring content with headings and paragraphs.
-- Using `<strong>` for strong importance and `<em>` for emphasis.
-- Applying basic HTML text semantics and formatting.
+- Structuring a simple article using headings and paragraphs.
+- Using semantic emphasis such as `<strong>` and `<em>`.
+- Practising readable document structure.
 
 ### 2. Lists
 
-Folder: `Lists/`
+**Directory:** `Lists/`
 
 Practised:
 
-- Creating unordered lists with `<ul>`.
-- Creating ordered lists with `<ol>`.
-- Defining list items with `<li>`.
-- Nesting lists to represent grouped information.
+- Creating ordered and unordered lists with `<ol>` and `<ul>`.
+- Using `<li>` for list items.
+- Nesting lists to represent grouped content.
 
 ### 3. Links and Images
 
-Folder: `links-and-images/`
+**Directory:** `links-and-images/`
 
 Practised:
 
-- Creating links with the anchor element.
-- Linking to local pages and external websites.
-- Embedding images with `<img>`.
-- Using `src`, `alt`, `width`, and `height` attributes.
-- Navigating project folders with relative paths.
+- Creating links with anchor elements.
+- Linking between local pages and external destinations.
+- Embedding an image and providing alternative text.
+- Using relative paths to navigate the project structure.
 
 ### 4. CSS Introduction and Selectors
 
-Folder: `intro-to-css/`
+**Directory:** `intro-to-css/`
 
-Exercises:
-
-- `01-css-methods/`
-- `02-class-id-selectors/`
-- `03-grouping-selectors/`
-- `04-chaining-selectors/`
-- `05-descendant-combinator/`
+| Exercise | Main practice |
+|---|---|
+| `01-css-methods/` | External, internal, and inline CSS |
+| `02-class-id-selectors/` | Class and ID selectors |
+| `03-grouping-selectors/` | Grouping selectors to share declarations |
+| `04-chaining-selectors/` | Chaining classes to target elements with multiple classes |
+| `05-descendant-combinator/` | Selecting descendants within a parent element |
 
 Practised:
 
@@ -62,9 +60,11 @@ Practised:
 - Experimenting with colors, backgrounds, font families, font sizes, font weights, and text alignment.
 - Setting image dimensions with `width`, `height`, and `auto`.
 
+The examples also practise declarations for color, backgrounds, typography, text alignment, and image sizing. See the [CSS exercises README](intro-to-css/README.md).
+
 ### 5. The Cascade
 
-Folder: `cascade/`
+**Directory:** `cascade/`
 
 Practised:
 
@@ -75,7 +75,7 @@ Practised:
 
 ### 6. Block and Inline Layout
 
-Folder: `block-and-inline/`
+**Directory:** `block-and-inline/`
 
 Exercises:
 
@@ -90,77 +90,86 @@ Practised:
 - Working with spacing around and inside elements.
 - Applying the box model to simple page layouts and a card exercise.
 
-### 7. Projects
+### 7. Flexbox
 
-Folder: `Projects/`
+**Directory:** `flex/`
+
+Seven exercises cover increasingly involved layouts:
+
+1. `01-flex-center/` – centring an element on both axes.
+2. `02-flex-header/` – arranging a logo and navigation links.
+3. `03-flex-header-2/` – building a more detailed header with profile and action elements.
+4. `04-flex-information/` – arranging a collection of image-and-text information items.
+5. `05-flex-modal/` – composing a modal, icon, content, and actions.
+6. `06-flex-layout/` – arranging header, main content, and footer across the viewport.
+7. `07-flex-layout-2/` – building a Holy Grail-style page with header, sidebar, content cards, and footer.
+
+See the [Flexbox exercises README](flex/README.md).
+
+### Projects
+
+**Directory:** `Projects/`
 
 #### Recipes Website
 
-Folder: `Projects/Recipes/`
+**Directory:** `Projects/Recipes/`
 
-My first multi-page HTML project, now being used to practise external CSS. It contains a homepage and three individual recipe pages:
+A multi-page recipe website with a homepage and three recipe pages: Indian-style vegetable and paneer lasagna, creamy Makhani sauce pasta, and paneer butter masala pizza. It brings together document structure, links, images, nested lists, and a shared external stylesheet. The CSS styles page typography, colors, images, and recipe lists.
 
-- Indian-style vegetable and paneer lasagna.
-- Creamy Makhani Sauce Pasta.
-- Paneer Butter Masala Pizza.
+See [`Projects/Recipes/README.md`](Projects/Recipes/README.md).
 
-The project brings together document structure, headings, paragraphs, links, images, ordered and unordered lists, nested lists, and relative navigation. A shared external stylesheet is linked from the homepage and recipe pages. The styling exercise is an opportunity to practise CSS selectors, colors, typography, image sizing, and spacing across multiple pages.
+### Landing Page
 
-## 📁 Folder Structure
+**Directory:** `Projects/LandingPage/`
+
+A landing page exercise built with HTML and an external stylesheet. It uses Flexbox to arrange the header, hero section, information items, testimonial, call-to-action area, and footer, following the visual brief supplied with the exercise.
+
+See [`Projects/LandingPage/README.md`](Projects/LandingPage/README.md).
+
+## Directory overview
 
 ```text
 Foundations/
-│
 ├── Working with Text/
-│   └── blog.html
-│
 ├── Lists/
-│   └── list.html
-│
 ├── links-and-images/
-│   ├── images/
-│   ├── pages/
-│   └── index.html
-│
 ├── intro-to-css/
 │   ├── 01-css-methods/
 │   ├── 02-class-id-selectors/
 │   ├── 03-grouping-selectors/
 │   ├── 04-chaining-selectors/
 │   └── 05-descendant-combinator/
-│
 ├── cascade/
-│
 ├── block-and-inline/
 │   ├── 01-margin-and-padding-1/
 │   └── 02-margin-and-padding-2/
-│
+├── flex/
+│   ├── 01-flex-center/
+│   ├── 02-flex-header/
+│   ├── 03-flex-header-2/
+│   ├── 04-flex-information/
+│   ├── 05-flex-modal/
+│   ├── 06-flex-layout/
+│   └── 07-flex-layout-2/
 └── Projects/
-    └── Recipes/
-        ├── recipes/
-        │   ├── lasagna.html
-        │   ├── pasta.html
-        │   └── pizza.html
-        ├── index.html
-        ├── style.css
-        └── README.md
+    ├── Recipes/
+    └── LandingPage/
 ```
 
-## 🎯 Learning Objectives
+## Learning outcomes so far
 
-- Build and structure webpages with HTML.
-- Use text elements, lists, links, and images appropriately.
-- Understand relative paths and organise multi-page projects.
-- Connect external stylesheets to HTML documents.
-- Write and combine CSS selectors.
-- Understand the cascade and specificity.
-- Experiment with typography, colors, dimensions, margins, padding, and borders.
-- Apply these fundamentals in small projects.
+- Structure pages with HTML elements and semantic text.
+- Organise content using ordered, unordered, and nested lists.
+- Navigate between pages and load local assets with relative paths.
+- Attach external stylesheets and write CSS selectors.
+- Reason about the cascade and specificity.
+- Apply the box model to spacing and alignment problems.
+- Use Flexbox alignment, distribution, wrapping, gaps, and direction to build component-level and page-level layouts.
+- Combine HTML and CSS in multi-page and single-page projects.
 
 ## 📈 Progress
 
-HTML fundamentals and the introductory CSS exercises listed above have been practised. I am continuing to reinforce CSS concepts through the Recipes Website styling exercise before moving further through the Foundations curriculum.
-HTML fundamentals and the introductory CSS exercises listed above have been practised. I am continuing to reinforce CSS concepts through the Recipes Website styling exercise before moving further through the Foundations curriculum.
+HTML fundamentals and the introductory CSS exercises listed above have been practised. I am continuing to reinforce CSS concepts.
 
 More exercises and projects will be added as I progress!
 

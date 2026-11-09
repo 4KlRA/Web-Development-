@@ -14,26 +14,21 @@ I'm currently following **The Odin Project** and working through its Foundations
 ## 📁 Repository Structure
 
 ```text
-WebDevelopment/
-│
-├── TheOdinProject/
-│   ├── Foundations/
-│   │   ├── Working with Text/
-│   │   ├── Lists/
-│   │   ├── links-and-images/
-│   │   ├── cascade/
-│   │   ├── intro-to-css/
-│   │   ├── block-and-inline/
-│   │   └── Projects/
-│   │       └── Recipes/
-│   │           ├── recipes/
-│   │           ├── index.html
-│   │           ├── style.css
-│   │           └── README.md
-│   │
-│   └── FullStackJavaScript/
-│
-└── README.md
+.
+├── README.md
+└── TheOdinProject/
+    ├── Foundations/
+    │   ├── Working with Text/
+    │   ├── Lists/
+    │   ├── links-and-images/
+    │   ├── intro-to-css/
+    │   ├── cascade/
+    │   ├── block-and-inline/
+    │   ├── flex/
+    │   └── Projects/
+    │       ├── Recipes/
+    │       └── LandingPage/
+    └── FullStackJavaScript/
 ```
 
 ## 🛠️ Technologies
@@ -47,19 +42,26 @@ WebDevelopment/
 
 ### The Odin Project – Foundations
 
-Currently learning and practising:
-
+**HTML**
 - [x] HTML document structure, headings, paragraphs, and text formatting
 - [x] Ordered and unordered lists
 - [x] Links, images, and relative file paths
+
+**CSS**
 - [x] CSS methods: external, internal, and inline stylesheets
 - [x] Element, class, and ID selectors
 - [x] Grouping, chaining, and descendant combinator selectors
-- [x] CSS cascade and specificity exercises
-- [x] Block and inline layout exercises
-- [x] Margin, padding, borders, and basic box-model practice
-- [x] First HTML project – Recipes Website
-- [ ] Continue CSS practice and complete the Recipes styling exercise
+- [x] CSS cascade and specificity
+- [x] Block and inline layout
+- [x] Margin, padding, borders, and box model
+- [x] Flexbox fundamentals and layout exercises
+
+**Projects**
+- [x] Recipes Website – HTML structure and external CSS styling
+- [x] Landing Page – Complete webpage layout using HTML, CSS, and Flexbox
+
+**Coming Next**
+- [ ] Continue with the remaining Foundations curriculum
 - [ ] JavaScript fundamentals
 - [ ] Further Foundations projects
 
