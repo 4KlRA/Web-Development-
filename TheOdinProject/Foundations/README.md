@@ -1,110 +1,65 @@
 # 🌱 The Odin Project – Foundations
 
-This folder contains my exercises, and projects from **The Odin Project Foundations** curriculum. The work is organised by lesson topic, with individual exercise folders where applicable.
+This directory contains my exercises, and projects from **The Odin Project Foundations** curriculum. The work is organised by lesson topic, with individual exercise folders where applicable.
 
 The purpose of this section is to develop a strong understanding of the fundamentals of web development through hands-on practice.
 
 ## 📚 Topics Covered
 
-### 1. Working with Text
+### 1. HTML Foundations
 
-**Directory:** `Working with Text/`
+**Directory:** `HTMLFoundations/`
 
-Practised:
+| Directory / file | Practice |
+|---|---|
+| `working-with-text/blog.html` | Headings, paragraphs, and text emphasis |
+| `lists/list.html` | Ordered, unordered, and nested lists |
+| `links-and-images/` | Links, local pages, images, alternative text, and relative paths |
 
-- Structuring a simple article using headings and paragraphs.
-- Using semantic emphasis such as `<strong>` and `<em>`.
-- Practising readable document structure.
+### 2. CSS Foundations
 
-### 2. Lists
-
-**Directory:** `Lists/`
-
-Practised:
-
-- Creating ordered and unordered lists with `<ol>` and `<ul>`.
-- Using `<li>` for list items.
-- Nesting lists to represent grouped content.
-
-### 3. Links and Images
-
-**Directory:** `links-and-images/`
-
-Practised:
-
-- Creating links with anchor elements.
-- Linking between local pages and external destinations.
-- Embedding an image and providing alternative text.
-- Using relative paths to navigate the project structure.
-
-### 4. CSS Introduction and Selectors
-
-**Directory:** `intro-to-css/`
+**Directory:** `CSSFoundations/`
 
 | Exercise | Main practice |
 |---|---|
-| `01-css-methods/` | External, internal, and inline CSS |
-| `02-class-id-selectors/` | Class and ID selectors |
-| `03-grouping-selectors/` | Grouping selectors to share declarations |
-| `04-chaining-selectors/` | Chaining classes to target elements with multiple classes |
-| `05-descendant-combinator/` | Selecting descendants within a parent element |
+| `intro-to-css/01-css-methods/` | External, internal, and inline CSS |
+| `intro-to-css/02-class-id-selectors/` | Class and ID selectors |
+| `intro-to-css/03-grouping-selectors/` | Grouping selectors |
+| `intro-to-css/04-chaining-selectors/` | Chaining class selectors |
+| `intro-to-css/05-descendant-combinator/` | Descendant combinator |
+| `cascade/` | Cascade and specificity |
+| `block-and-inline/01-margin-and-padding-1/` | Spacing, borders, and box model |
+| `block-and-inline/02-margin-and-padding-2/` | Further margin and padding practice |
 
-Practised:
+Practised CSS declarations include color, backgrounds, typography, text alignment, image sizing, dimensions, margins, padding, and borders. The exercises use the external stylesheet method where applicable.
 
-- Adding CSS with external stylesheets, internal `<style>` elements, and inline `style` attributes.
-- Writing CSS rules with selectors, declarations, properties, and values.
-- Selecting elements with element, class, and ID selectors.
-- Grouping selectors to share declarations.
-- Chaining class selectors to target elements with multiple classes.
-- Using the descendant combinator to select nested elements.
-- Experimenting with colors, backgrounds, font families, font sizes, font weights, and text alignment.
-- Setting image dimensions with `width`, `height`, and `auto`.
+### 3. Flexbox
 
-The examples also practise declarations for color, backgrounds, typography, text alignment, and image sizing. See the [CSS exercises README](intro-to-css/README.md).
+**Directory:** `Flexbox/`
 
-### 5. The Cascade
-
-**Directory:** `cascade/`
-
-Practised:
-
-- Reading and resolving competing CSS declarations.
-- Working with selector specificity and the cascade.
-- Understanding how declarations from different selectors affect the same element.
-- Applying typography and color declarations while fixing a stylesheet.
-
-### 6. Block and Inline Layout
-
-**Directory:** `block-and-inline/`
-
-Exercises:
-
-- `01-margin-and-padding-1/`
-- `02-margin-and-padding-2/`
-
-Practised:
-
-- Adjusting margin and padding.
-- Applying borders and dimensions.
-- Using `margin: 0 auto` and automatic margins for horizontal placement.
-- Working with spacing around and inside elements.
-- Applying the box model to simple page layouts and a card exercise.
-
-### 7. Flexbox
-
-**Directory:** `flex/`
-
-Seven exercises cover increasingly involved layouts:
+Seven exercises build from simple alignment to full page layouts:
 
 1. `01-flex-center/` – centring an element on both axes.
 2. `02-flex-header/` – arranging a logo and navigation links.
 3. `03-flex-header-2/` – building a more detailed header with profile and action elements.
-4. `04-flex-information/` – arranging a collection of image-and-text information items.
-5. `05-flex-modal/` – composing a modal, icon, content, and actions.
-6. `06-flex-layout/` – arranging header, main content, and footer across the viewport.
-7. `07-flex-layout-2/` – building a Holy Grail-style page with header, sidebar, content cards, and footer.
+4. `04-flex-information/` – arranging image-and-text information items.
+5. `05-flex-modal/` – composing a modal with content and actions.
+6. `06-flex-layout/` – arranging a header, main content, and footer.
+7. `07-flex-layout-2/` – building a Holy Grail-style layout with a sidebar, content cards, and footer.
 
-See the [Flexbox exercises README](flex/README.md).
+Practised alignment, justification, direction, wrapping, gaps, flexible sizing, and nested Flexbox layouts.
+
+### 4. JavaScript Basics
+
+**Directory:** `JavaScriptBasics/`
+
+Current work includes:
+
+- `index.html` – introductory expressions, arithmetic, variables, reassignment, and constants, with output written to the browser console.
+- `functionBasics.js` – functions for adding seven, multiplying values, capitalising a string, and returning the last character.
+- `data_types_and_conditionals/` – small exercises for Hello World, addition, number checking, arithmetic expressions, and joining strings. The exercise folders also contain Jest-style `.spec.js` files.
+
+See [`JavaScriptBasics/README.md`](JavaScriptBasics/README.md) for the current exercise inventory.
 
 ### Projects
 
@@ -126,24 +81,35 @@ A landing page exercise built with HTML and an external stylesheet. It uses Flex
 
 See [`Projects/LandingPage/README.md`](Projects/LandingPage/README.md).
 
+### Rock Paper Scissors
+
+**Directory:** `Projects/RockPaperScissors/`
+
+A JavaScript implementation of the classic game. The current version asks for the player's choice through `prompt()`, generates a random computer choice, plays five rounds, tracks both scores, and reports round results and final scores in the browser console.
+
+See [`Projects/RockPaperScissors/README.md`](Projects/RockPaperScissors/README.md).
+
+
 ## Directory overview
 
 ```text
 Foundations/
-├── Working with Text/
-├── Lists/
-├── links-and-images/
-├── intro-to-css/
-│   ├── 01-css-methods/
-│   ├── 02-class-id-selectors/
-│   ├── 03-grouping-selectors/
-│   ├── 04-chaining-selectors/
-│   └── 05-descendant-combinator/
-├── cascade/
-├── block-and-inline/
-│   ├── 01-margin-and-padding-1/
-│   └── 02-margin-and-padding-2/
-├── flex/
+├── HTMLFoundations/
+│   ├── working-with-text/
+│   ├── lists/
+│   └── links-and-images/
+├── CSSFoundations/
+│   ├── intro-to-css/
+│   │   ├── 01-css-methods/
+│   │   ├── 02-class-id-selectors/
+│   │   ├── 03-grouping-selectors/
+│   │   ├── 04-chaining-selectors/
+│   │   └── 05-descendant-combinator/
+│   ├── cascade/
+│   └── block-and-inline/
+│       ├── 01-margin-and-padding-1/
+│       └── 02-margin-and-padding-2/
+├── Flexbox/
 │   ├── 01-flex-center/
 │   ├── 02-flex-header/
 │   ├── 03-flex-header-2/
@@ -151,25 +117,27 @@ Foundations/
 │   ├── 05-flex-modal/
 │   ├── 06-flex-layout/
 │   └── 07-flex-layout-2/
+├── JavaScriptBasics/
+│   └── data_types_and_conditionals/
 └── Projects/
     ├── Recipes/
-    └── LandingPage/
+    ├── LandingPage/
+    └── RockPaperScissors/
 ```
 
 ## Learning outcomes so far
 
-- Structure pages with HTML elements and semantic text.
-- Organise content using ordered, unordered, and nested lists.
-- Navigate between pages and load local assets with relative paths.
+- Structure HTML documents and organise content with headings, paragraphs, lists, links, and images.
+- Use relative paths to connect pages and local assets.
 - Attach external stylesheets and write CSS selectors.
-- Reason about the cascade and specificity.
-- Apply the box model to spacing and alignment problems.
-- Use Flexbox alignment, distribution, wrapping, gaps, and direction to build component-level and page-level layouts.
-- Combine HTML and CSS in multi-page and single-page projects.
+- Reason about the cascade, specificity, and the box model.
+- Use Flexbox to align, distribute, and size elements in component-level and page-level layouts.
+- Write basic JavaScript using variables, operators, functions, conditionals, loops, and browser prompts/console output.
+- Combine these fundamentals in small web projects.
 
 ## 📈 Progress
 
-HTML fundamentals and the introductory CSS exercises listed above have been practised. I am continuing to reinforce CSS concepts.
+HTML fundamentals and the listed introductory CSS and Flexbox exercises have been practised. JavaScript fundamentals are now underway.
 
 More exercises and projects will be added as I progress!
 

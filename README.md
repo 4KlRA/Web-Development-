@@ -18,18 +18,18 @@ I'm currently following **The Odin Project** and working through its Foundations
 ├── README.md
 └── TheOdinProject/
     ├── Foundations/
-    │   ├── Working with Text/
-    │   ├── Lists/
-    │   ├── links-and-images/
-    │   ├── intro-to-css/
-    │   ├── cascade/
-    │   ├── block-and-inline/
-    │   ├── flex/
+    │   ├── HTMLFoundations/
+    │   ├── CSSFoundations/
+    │   ├── Flexbox/
+    │   ├── JavaScriptBasics/
     │   └── Projects/
     │       ├── Recipes/
-    │       └── LandingPage/
+    │       ├── LandingPage/
+    │       └── RockPaperScissors/
     └── FullStackJavaScript/
 ```
+
+Each topic folder contains its lesson files and exercises. Project folders include their own README files describing the implementation and how to run the work.
 
 ## 🛠️ Technologies
 
@@ -43,27 +43,22 @@ I'm currently following **The Odin Project** and working through its Foundations
 ### The Odin Project – Foundations
 
 **HTML**
-- [x] HTML document structure, headings, paragraphs, and text formatting
+- [x] Document structure, headings, paragraphs, and text formatting
 - [x] Ordered and unordered lists
-- [x] Links, images, and relative file paths
+- [x] Links, images, alternative text, and relative paths
 
 **CSS**
-- [x] CSS methods: external, internal, and inline stylesheets
-- [x] Element, class, and ID selectors
-- [x] Grouping, chaining, and descendant combinator selectors
-- [x] CSS cascade and specificity
+- [x] External, internal, and inline CSS methods
+- [x] Element, class, ID, grouping, chaining, and descendant selectors
+- [x] Cascade and specificity
 - [x] Block and inline layout
-- [x] Margin, padding, borders, and box model
-- [x] Flexbox fundamentals and layout exercises
+- [x] Margin, padding, borders, and the box model
+- [x] Flexbox alignment, distribution, direction, wrapping, and page layouts
 
-**Projects**
-- [x] Recipes Website – HTML structure and external CSS styling
-- [x] Landing Page – Complete webpage layout using HTML, CSS, and Flexbox
-
-**Coming Next**
-- [ ] Continue with the remaining Foundations curriculum
-- [ ] JavaScript fundamentals
-- [ ] Further Foundations projects
+**JavaScript**
+- [x] Initial JavaScript exercises covering values, variables, arithmetic, and strings
+- [x] Function basics and return values
+- [x] Conditionals, random choice generation, loops, and score tracking through Rock Paper Scissors
 
 ### Full Stack JavaScript
 
@@ -73,11 +68,11 @@ Not started yet.
 
 - Build a strong foundation in HTML, CSS, and JavaScript.
 - Understand how webpages are structured and styled.
-- Strengthen problem-solving skills through practical exercises.
-- Build projects alongside the curriculum.
-- Become comfortable with Git and GitHub.
-- Progress towards becoming a full-stack developer.
-
+- Build strong foundations before moving into larger applications.
+- Practise concepts through small exercises and progressively larger projects.
+- Improve problem-solving, debugging, and code organisation.
+- Develop a consistent Git and GitHub workflow.
+- Progress through the Foundations curriculum and then the Full Stack JavaScript path.
 ---
 
 *This repository is a work in progress. I'll keep updating it as I learn new concepts and build more projects.*
