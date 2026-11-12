@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 20% 20%, #25104b 0%, transparent 35%),
+        radial-gradient(circle at 80% 80%, #092d46 0%, transparent 35%),
+        #080816;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 30px 15px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(#ffffff08 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff08 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 65px;
+    background: linear-gradient(90deg, #00f5ff, #c850ff, #ff3cac);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 15px #a020f088);
+    animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+    from {
+        filter: drop-shadow(0 0 8px #00f5ff66);
+    }
+    to {
+        filter: drop-shadow(0 0 22px #c850ffaa);
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+}
+
+button {
+    position: relative;
+    width: 155px;
+    height: 155px;
+    border: 2px solid #00f5ff;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #15152e, #09091a);
+    color: #00f5ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:
+        0 0 12px #00f5ff44,
+        inset 0 0 15px #00f5ff11;
+}
+
+button:hover {
+    transform: translateY(-12px) scale(1.07);
+    background: #00f5ff;
+    color: #080816;
+    box-shadow:
+        0 0 20px #00f5ff,
+        0 0 50px #00f5ff88;
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+.rock {
+    border-color: #ff3c78;
+    color: #ff3c78;
+    box-shadow: 0 0 15px #ff3c7844;
+}
+
+.rock:hover {
+    background: #ff3c78;
+    color: #080816;
+    box-shadow: 0 0 35px #ff3c78;
+}
+
+.paper {
+    border-color: #00f5ff;
+    color: #00f5ff;
+}
+
+.paper:hover {
+    background: #00f5ff;
+    color: #080816;
+}
+
+.scissors {
+    border-color: #c850ff;
+    color: #c850ff;
+    box-shadow: 0 0 15px #c850ff44;
+}
+
+.scissors:hover {
+    background: #c850ff;
+    color: #080816;
+    box-shadow: 0 0 35px #c850ff;
+}
+
+.resultBoard {
+    width: min(650px, 95%);
+    padding: 35px;
+    border: 1px solid #ffffff22;
+    border-radius: 25px;
+    background: linear-gradient(
+        145deg,
+        #ffffff12,
+        #ffffff04
+    );
+    backdrop-filter: blur(15px);
+    box-shadow:
+        0 0 35px #8a2be222,
+        inset 0 0 25px #ffffff08;
+}
+
+.resultText {
+    min-height: 45px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #ffe66d;
+    margin-bottom: 30px;
+    text-shadow: 0 0 12px #ffe66d88;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.result > div {
+    padding: 20px 10px;
+    border-radius: 15px;
+    background: #ffffff09;
+    border: 1px solid #ffffff18;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.humanScore,
+.computerScore,
+.draw {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 15px;
+    color: #00f5ff;
+    text-shadow: 0 0 15px #00f5ff99;
+}
+
+.humanScore {
+    color: #00ff99;
+    text-shadow: 0 0 15px #00ff9988;
+}
+
+.computerScore {
+    color: #ff3c78;
+    text-shadow: 0 0 15px #ff3c7888;
+}
+
+.draw {
+    color: #ffe66d;
+    text-shadow: 0 0 15px #ffe66d88;
+}
+
+/* Victory overlay */
+
+.gameOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 3, 15, 0.85);
+    backdrop-filter: blur(12px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 20px;
+}
+
+.gameOverlay.active {
+    display: flex;
+}
+
+.winnerCard {
+    width: min(450px, 100%);
+    padding: 50px 30px;
+    text-align: center;
+    border: 2px solid #00f5ff;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #171735, #09091a);
+    box-shadow:
+        0 0 20px #00f5ff88,
+        0 0 70px #c850ff55,
+        inset 0 0 30px #00f5ff11;
+    animation: victoryPop 0.45s ease-out;
+}
+
+.winnerTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00f5ff, #c850ff, #ff3cac);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 15px #00f5ff88);
+}
+
+.winnerMessage {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.restartBtn {
+    width: 200px;
+    height: 60px;
+    border: 2px solid #00ff99;
+    color: #00ff99;
+    background: transparent;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.restartBtn:hover {
+    background: #00ff99;
+    color: #080816;
+    box-shadow: 0 0 30px #00ff99;
+    transform: scale(1.05);
+}
+
+@keyframes victoryPop {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 550px) {
+    h1 {
+        margin-bottom: 45px;
+        letter-spacing: 2px;
+    }
+
+    .buttons {
+        gap: 12px;
+    }
+
+    button {
+        width: 105px;
+        height: 105px;
+        font-size: 0.8rem;
+        border-radius: 18px;
+    }
+
+    .resultBoard {
+        padding: 20px 12px;
+    }
+
+    .result {
+        gap: 8px;
+    }
+
+    .result > div {
+        font-size: 0.9rem;
+        padding: 15px 5px;
+    }
+
+    .humanScore,
+    .computerScore,
+    .draw {
+        font-size: 1.8rem;
+    }
+}

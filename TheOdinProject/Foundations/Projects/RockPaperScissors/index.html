@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>Rock, Paper, Scissors. Shoot!!!</h1>
+
+    <div class="buttons">
+        <button class="rock">ROCK</button>
+        <button class="paper">PAPER</button>
+        <button class="scissors">SCISSORS</button>
+    </div>
+
+    <div class="resultBoard">
+        <p class="resultText"></p>
+
+        <div class="result">
+            <div>
+                Your score:
+                <div class="humanScore">0</div>
+            </div>
+
+            <div>
+                Draw:
+                <div class="draw">0</div>
+            </div>
+
+            <div>
+                Computer score:
+                <div class="computerScore">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gameOverlay">
+        <div class="winnerCard">
+            <h2 class="winnerTitle">VICTORY!</h2>
+            <p class="winnerMessage">You conquered the arena!</p>
+            <button class="restartBtn">PLAY AGAIN</button>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
