@@ -25,17 +25,18 @@ I'm currently following **The Odin Project** and working through its Foundations
     │   └── Projects/
     │       ├── Recipes/
     │       ├── LandingPage/
-    │       └── RockPaperScissors/
+    │       ├── RockPaperScissors/
+    │       └── Etch-a-Sketch/
     └── FullStackJavaScript/
 ```
 
-Each topic folder contains its lesson files and exercises. Project folders include their own README files describing the implementation and how to run the work.
+Each lesson directory contains its corresponding exercises and assets. Project directories include their own README files describing the implementation and how to run the work.
 
 ## 🛠️ Technologies
 
 - HTML5
 - CSS3
-- JavaScript (as I progress)
+- JavaScript
 - Git and GitHub
 
 ## 🎯 Current Progress
@@ -43,22 +44,39 @@ Each topic folder contains its lesson files and exercises. Project folders inclu
 ### The Odin Project – Foundations
 
 **HTML**
-- [x] Document structure, headings, paragraphs, and text formatting
-- [x] Ordered and unordered lists
+- [x] HTML document structure and semantic content elements
+- [x] Headings, paragraphs, and text emphasis
+- [x] Ordered, unordered, and nested lists
 - [x] Links, images, alternative text, and relative paths
 
 **CSS**
 - [x] External, internal, and inline CSS methods
 - [x] Element, class, ID, grouping, chaining, and descendant selectors
 - [x] Cascade and specificity
-- [x] Block and inline layout
+- [x] Block and inline elements
 - [x] Margin, padding, borders, and the box model
-- [x] Flexbox alignment, distribution, direction, wrapping, and page layouts
+- [x] Colors, backgrounds, typography, and image sizing
 
-**JavaScript**
-- [x] Initial JavaScript exercises covering values, variables, arithmetic, and strings
-- [x] Function basics and return values
-- [x] Conditionals, random choice generation, loops, and score tracking through Rock Paper Scissors
+**Flexbox**
+- [x] Alignment and centring
+- [x] Header and navigation layouts
+- [x] Flexible sizing, gaps, and wrapping
+- [x] Information cards and modal layouts
+- [x] Full-page layouts, including a sidebar-based layout
+
+**JavaScript Basics**
+- [x] Values, variables, constants, arithmetic, and reassignment
+- [x] Functions, parameters, return values, and string operations
+- [x] Conditionals and basic problem-solving exercises
+- [x] DOM selection, element creation, and content manipulation
+- [x] Event handling and interactive browser behaviour
+
+### Projects
+
+- [x] Recipes Website – multi-page HTML website with a shared external stylesheet
+- [x] Landing Page – page layout built with Flexbox and external CSS
+- [x] Rock Paper Scissors – interactive browser game with score tracking and a restart flow
+- [x] Etch-a-Sketch – dynamically generated drawing grid
 
 ### Full Stack JavaScript
 

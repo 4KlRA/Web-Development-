@@ -1,17 +1,30 @@
 # Rock Paper Scissors
 
-A small prompt-and-console Rock Paper Scissors game implemented in JavaScript as part of **The Odin Project Foundations** curriculum.
+A browser-based Rock Paper Scissors game built with **HTML, CSS, and JavaScript** as part of The Odin Project Foundations curriculum.
 
-The current version runs in the browser using JavaScript prompts for player input and the developer console for round results and scores. It is intentionally focused on practising JavaScript fundamentals rather than building a graphical interface.
+The project started with the core game logic and console-based interaction. The current version uses on-page buttons, displays the score in the browser, and shows a result overlay when either side reaches five points
 
-## How the game works
+## ✨ Features
 
-1. The player is prompted to enter `ROCK`, `PAPER`, or `SCISSORS`.
-2. The computer randomly selects one of the three choices.
-3. The two choices are compared to determine whether the round is a win, loss, or draw.
-4. The relevant score is updated after a decisive round. Draws do not change either score.
-5. The game repeats for five rounds.
-6. The player's and computer's final scores are printed to the browser console.
+- **Player Controls:** Choose Rock, Paper, or Scissors using the on-page buttons.
+- **Random Computer Choice:** The computer randomly selects one of the three options.
+- **Live Scoreboard:** Tracks the player's score, computer's score, and number of draws.
+- **Round Results:** Displays whether the round was a win, loss, or draw.
+- **First to Five:** The game ends when either the player or computer reaches five points.
+- **End-game Overlay:** Displays a victory or defeat message.
+- **Restart:** Resets all scores and starts a new game.
+- **Responsive Styling:** The layout and controls adapt for smaller screens..
+
+## 🎮 How to Play
+
+1. Open `index.html` in a modern web browser.
+2. Select **ROCK**, **PAPER**, or **SCISSORS**.
+3. The computer makes its choice automatically.
+4. The round result and scoreboard update after each selection.
+5. The game ends when the player or computer reaches five points.
+6. Select **PLAY AGAIN** to reset the scoreboard and play another game.
+
+No package installation or development server is required. Google Fonts are loaded externally for the typography.
 
 ## Rules
 
@@ -20,39 +33,33 @@ The current version runs in the browser using JavaScript prompts for player inpu
 - Paper beats Rock.
 - Matching choices result in a draw.
 
-## Project structure
+## 📁 Project Structure
 
 ```text
 RockPaperScissors/
 ├── index.html
+├── style.css
 ├── script.js
 └── README.md
 ```
 
-- **`index.html`** – minimal HTML document that loads the JavaScript file.
-- **`script.js`** – computer choice generation, player input, round resolution, score tracking, and the five-round game loop.
-
-## Implementation details
+## ⚙️ Implementation Details
 
 ### `getComputerChoice()`
 
-Uses `Math.random()` to generate a value in the range from zero up to (but not including) three. The value is divided into three ranges to select Rock, Paper, or Scissors.
+Uses `Math.random()` to generate a random value and maps it to Rock, Paper, or Scissors.
 
-### `getHumanChoice()`
+### `playRound(humanChoice)`
 
-Uses `prompt()` to request the player's choice and converts the entered text to uppercase so lowercase input can be compared with the computer's uppercase choice.
+Generates the computer's choice, compares it with the player's choice, updates the appropriate score, and displays the round result.
 
-### Score variables
+### `checkwinners()`
 
-`humanScore` and `computerScore` are initialised to zero and updated when a player or the computer wins a round.
+Checks whether either score has reached five. It updates the overlay message and activates the overlay when the game is over.
 
-### `playRound(computerChoice, humanChoice)`
+### Event Handling
 
-Compares the two choices, identifies a draw or winner, updates the appropriate score, and logs the round result.
-
-### `playGame()`
-
-Runs five rounds by repeatedly generating a computer choice, requesting a human choice, and passing both values to `playRound()`.
+A click listener on the `.buttons` container handles player selections through event delegation. A separate listener on the restart button resets the scores, clears the previous result, and hides the overlay.
 
 ## Run locally
 
@@ -63,20 +70,20 @@ Runs five rounds by repeatedly generating a computer choice, requesting a human 
 
 No package installation, build step, or development server is required.
 
-## Concepts practised
+## 🧠 Concepts Practised
 
-- Declaring and updating variables with `let`.
-- Writing and calling functions with parameters and return values.
 - Generating random values with `Math.random()`.
-- Reading input with `prompt()` and normalising strings with `toUpperCase()`.
+- Writing functions and separating game logic into smaller units.
 - Using conditional logic to compare game states.
-- Repeating actions with a `for` loop.
-- Maintaining state with score variables.
-- Logging program output with `console.log()`.
+- Tracking and updating state with variables.
+- Selecting and updating DOM elements.
+- Handling click events and using event delegation.
+- Updating text content and CSS classes through JavaScript.
+- Building a responsive interface with CSS and adding transitions and animations.
 
-## Current limitations
+## ⚠️ Current Limitations
 
-- The game is controlled through browser prompts rather than on-page buttons.
-- Round results and scores are displayed in the developer console.
-- Input is converted to uppercase, but it is not currently validated. An empty or unexpected response does not produce a normal round result, and cancelling the prompt can cause an error because the returned value is not checked before calling `toUpperCase()`.
-- The game always runs for five rounds; there is no replay or configurable round count yet.
+- The winning score is fixed at five.
+- There is no separate round history showing both choices after each round.
+- The game logic assumes the click comes from one of the three choice buttons inside the button container.
+- Accessibility details such as keyboard-focused game states and announcing score changes to assistive technology can be improved.
