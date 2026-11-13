@@ -1,8 +1,8 @@
 # 🌱 The Odin Project – Foundations
 
-This directory contains my exercises, and projects from **The Odin Project Foundations** curriculum. The work is organised by lesson topic, with individual exercise folders where applicable.
+This directory contains my completed exercises and projects from **The Odin Project Foundations** curriculum. The work is organised by lesson topic, with individual exercise folders where applicable.
 
-The purpose of this section is to develop a strong understanding of the fundamentals of web development through hands-on practice.
+The purpose of this section was to develop a strong understanding of the fundamentals of web development through hands-on practice, covering HTML, CSS, Flexbox, JavaScript, DOM manipulation, and browser-based projects.
 
 ## 📚 Topics Covered
 
@@ -15,6 +15,7 @@ The purpose of this section is to develop a strong understanding of the fundamen
 | `working-with-text/blog.html` | HTML document structure, headings, paragraphs, and text emphasis |
 | `lists/list.html` | Ordered, unordered, and nested lists |
 | `links-and-images/` | Links, local pages, images, alternative text, and relative paths |
+
 ### 2. CSS Foundations
 
 **Directory:** `CSSFoundations/`
@@ -30,7 +31,7 @@ The purpose of this section is to develop a strong understanding of the fundamen
 | `block-and-inline/01-margin-and-padding-1/` | Block and inline behaviour, spacing, borders, and box model |
 | `block-and-inline/02-margin-and-padding-2/` | Further margin and padding practice |
 
-The exercises practise selectors and CSS declarations for color, backgrounds, typography, text alignment, image sizing, dimensions, margins, padding, and borders. External stylesheets are used for the styling exercises where applicable.
+The exercises covered selectors and CSS declarations for color, backgrounds, typography, text alignment, image sizing, dimensions, margins, padding, and borders. External stylesheets were used for the styling exercises where applicable.
 
 ### 3. Flexbox
 
@@ -52,12 +53,47 @@ Practised alignment, justification, direction, wrapping, gaps, flexible sizing, 
 
 **Directory:** `JavaScriptBasics/`
 
-Current work includes:
+Completed exercises and practice include:
 
 - `index.html` – introductory expressions, arithmetic, variables, reassignment, constants, and console output.
 - `functionBasics.js` – functions for adding seven, multiplying values, capitalising a string, and returning its last character.
 - `data_types_and_conditionals/` – exercises for Hello World, addition, number checking, arithmetic expressions, and joining strings. Each exercise includes a corresponding `.spec.js` test file.
 - `DOM_manipulations_and_events/` – selecting DOM elements, creating elements, changing text and styles, and appending elements to the page.
+
+#### Testing JavaScript Exercises
+
+The JavaScript exercises include test scripts written using **Jest**. These tests verify the expected behaviour of individual functions and exercise solutions.
+
+Run the commands from the `JavaScriptBasics/` directory.
+
+**Run all exercise tests:**
+
+```bash
+npx --yes jest --runInBand
+```
+
+**Run an individual exercise test:**
+
+```bash
+npx --yes jest data_types_and_conditionals/01_helloWorld/helloWorld.spec.js --runInBand
+```
+
+**Useful Jest commands:**
+
+```bash
+# Run a particular test file
+npx --yes jest path/to/exercise.spec.js --runInBand
+
+# Run tests in watch mode (requires Jest to be available locally)
+npx jest --watch
+
+# Display individual test results
+npx --yes jest --verbose --runInBand
+```
+
+The `.spec.js` files contain the test cases, while the corresponding JavaScript files contain the implementations being tested. Some exercises may also contain skipped test cases using `test.skip()`. These are not executed unless explicitly enabled.
+
+DOM manipulation exercises should additionally be tested in a browser by opening their corresponding HTML files and checking the resulting page behaviour and interactions.
 
 ### Projects
 
@@ -68,7 +104,6 @@ Current work includes:
 **Directory:** `Projects/Recipes/`
 
 A multi-page recipe website with a homepage and three recipe pages: Indian-style vegetable and paneer lasagna, creamy Makhani sauce pasta, and paneer butter masala pizza. It combines HTML structure, links, images, nested lists, and a shared external stylesheet.
-
 
 See [`Projects/Recipes/README.md`](Projects/Recipes/README.md).
 
@@ -93,6 +128,14 @@ See [`Projects/RockPaperScissors/README.md`](Projects/RockPaperScissors/README.m
 **Directory:** `Projects/Etch-a-Sketch/`
 
 A browser-based drawing grid generated with JavaScript. The Reset button asks for a grid dimension and creates that many rows and columns of squares. Hovering over a square changes its background color.
+
+#### Calculator
+
+**Directory:** `Projects/Calculator/`
+
+A browser-based calculator implementing arithmetic operations through an interactive interface. It brings together JavaScript functions, event handling, DOM manipulation, and basic application logic.
+
+See [`Projects/Calculator/README.md`](Projects/Calculator/README.md).
 
 ## Directory overview
 
@@ -130,24 +173,29 @@ Foundations/
     ├── Recipes/
     ├── LandingPage/
     ├── RockPaperScissors/
-    └── Etch-a-Sketch/
+    ├── Etch-a-Sketch/
+    └── Calculator/
 ```
 
-## Learning outcomes so far
+## Learning Outcomes
 
 - Structure HTML documents and organise content with headings, paragraphs, lists, links, and images.
 - Use relative paths to connect pages and local assets.
 - Attach external stylesheets and write CSS selectors.
 - Understand the cascade, specificity, and the box model.
 - Use Flexbox to align, distribute, and size elements in component-level and page-level layouts.
-- Write JavaScript with variables, operators, functions, conditionals, and loops.
+- Write JavaScript using variables, data types, operators, functions, conditionals, and loops.
+- Understand basic JavaScript expressions and function behaviour.
 - Select and manipulate DOM elements, create new elements, and respond to user events.
-- Combine these fundamentals in small browser-based projects.
+- Use Jest to write and execute tests for JavaScript exercises.
+- Combine these fundamentals in browser-based projects.
 
 ## 📈 Progress
 
-HTML fundamentals, introductory CSS, and the listed Flexbox exercises have been practised. JavaScript fundamentals and DOM manipulation are now underway, with the concepts being applied through projects.
+**The Odin Project Foundations curriculum is completed.**
 
-More exercises and projects will be added as I progress!
+HTML fundamentals, CSS, Flexbox, JavaScript basics, DOM manipulation, and the associated exercises and projects have been covered through practical implementation.
+
+The completed Foundations work establishes the groundwork for moving into the next stage of web development: deeper JavaScript concepts, asynchronous programming, modern development tools, and eventually full-stack development.
 
 ---

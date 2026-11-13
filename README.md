@@ -26,7 +26,8 @@ I'm currently following **The Odin Project** and working through its Foundations
     │       ├── Recipes/
     │       ├── LandingPage/
     │       ├── RockPaperScissors/
-    │       └── Etch-a-Sketch/
+    │       ├── Etch-a-Sketch/
+    │       └── Calculator/
     └── FullStackJavaScript/
 ```
 
@@ -43,40 +44,22 @@ Each lesson directory contains its corresponding exercises and assets. Project d
 
 ### The Odin Project – Foundations
 
-**HTML**
-- [x] HTML document structure and semantic content elements
-- [x] Headings, paragraphs, and text emphasis
-- [x] Ordered, unordered, and nested lists
-- [x] Links, images, alternative text, and relative paths
+**Completed.** The curriculum work in this repository covers:
 
-**CSS**
-- [x] External, internal, and inline CSS methods
-- [x] Element, class, ID, grouping, chaining, and descendant selectors
-- [x] Cascade and specificity
-- [x] Block and inline elements
-- [x] Margin, padding, borders, and the box model
-- [x] Colors, backgrounds, typography, and image sizing
+- **HTML:** document structure, semantic content, headings, paragraphs, lists, links, images, alternative text, and relative paths.
+- **CSS:** styling methods, selectors, cascade, specificity, block and inline elements, the box model, colors, backgrounds, typography, dimensions, and spacing.
+- **Flexbox:** alignment, navigation, flexible sizing, wrapping, cards, modal layouts, and complete page layouts.
+- **JavaScript:** values, variables, operators, functions, conditionals, loops, arrays, objects, DOM manipulation, and events.
 
-**Flexbox**
-- [x] Alignment and centring
-- [x] Header and navigation layouts
-- [x] Flexible sizing, gaps, and wrapping
-- [x] Information cards and modal layouts
-- [x] Full-page layouts, including a sidebar-based layout
-
-**JavaScript Basics**
-- [x] Values, variables, constants, arithmetic, and reassignment
-- [x] Functions, parameters, return values, and string operations
-- [x] Conditionals and basic problem-solving exercises
-- [x] DOM selection, element creation, and content manipulation
-- [x] Event handling and interactive browser behaviour
+The exercises and projects are listed in [`TheOdinProject/Foundations/README.md`](TheOdinProject/Foundations/README.md).
 
 ### Projects
 
-- [x] Recipes Website – multi-page HTML website with a shared external stylesheet
-- [x] Landing Page – page layout built with Flexbox and external CSS
-- [x] Rock Paper Scissors – interactive browser game with score tracking and a restart flow
-- [x] Etch-a-Sketch – dynamically generated drawing grid
+- [x] [Recipes Website](TheOdinProject/Foundations/Projects/Recipes/README.md)
+- [x] [Landing Page](TheOdinProject/Foundations/Projects/LandingPage/README.md)
+- [x] [Rock Paper Scissors](TheOdinProject/Foundations/Projects/RockPaperScissors/README.md)
+- [x] [Etch-a-Sketch](TheOdinProject/Foundations/Projects/Etch-a-Sketch/README.md)
+- [x] Calculator – documented in the [Foundations README](TheOdinProject/Foundations/README.md), as it does not have a project-level README.
 
 ### Full Stack JavaScript
 
@@ -84,13 +67,11 @@ Not started yet.
 
 ## 🚀 Goals
 
-- Build a strong foundation in HTML, CSS, and JavaScript.
-- Understand how webpages are structured and styled.
-- Build strong foundations before moving into larger applications.
-- Practise concepts through small exercises and progressively larger projects.
-- Improve problem-solving, debugging, and code organisation.
+- Build on the foundations of HTML, CSS, and JavaScript.
+- Continue improving problem-solving, debugging, and code organisation.
+- Apply the fundamentals through progressively larger projects.
 - Develop a consistent Git and GitHub workflow.
-- Progress through the Foundations curriculum and then the Full Stack JavaScript path.
+- Progress through The Odin Project Full Stack JavaScript path.
 ---
 
-*This repository is a work in progress. I'll keep updating it as I learn new concepts and build more projects.*
+*Foundations is complete. I'll keep updating this repository as I work through the next stage and build more projects.*
